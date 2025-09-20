@@ -1,57 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     height: 100vh;
     box-sizing: border-box;
     background-color: #012340;
     color: #03A63C;
 }
+
 .destaqueTitulo{
     color:#04D939 ;
 }
+
 .apresentacao{
     margin: 10% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .apresentacao__conteudo{
     width: 615px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
+
+.ApresentacaoConteudo__texto{
+    border: 2px solid #03A63C; 
+    padding: 20px;
+}
+
 .apresentacaoConteudo__fonteTitulo{
     font-size: 36px;
     font-family: "Zen Dots", sans-serif;
 }
+
 .apresentacaoConteudo__fonteParagrafo{
     font-size: 20px;
-    font-family: "Zen Dots", sans-serif;
+    font-family: 'Fira Code', monospace;;
 }
+
 .imagemPortifolio{
     border-radius: 15px;
     width:35%;
     height: 40%;
 }
+
 .apresentacao__links{
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 32px;
 }
+
+.apresentacaoLinks__subtitulo{
+    font-family:"Zen Dots", sans-serif ;
+    color:#04D939 ;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 .apresentacaoLinks_link{
     font-family: "Zen Dots", sans-serif;
+    border:2px ridge #03A63C ;
     font-weight: 500;
-    background-color: #04D939;
     padding: 21.5px 0;
-    width: 280px;
-    border-radius: 16px;
+    width: 380px;
+    border-radius: 10px;
     font-size: 24px;
     text-align: center;
     text-decoration: none;
-    color: #000000;
+    color: #03A63C;
 
 }
