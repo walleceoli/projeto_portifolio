@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Zen+Dots&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #012340;
+    color: #03A63C;
+}
+.destaqueTitulo{
+    color:#04D939 ;
+}
+.apresentacao{
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacaoConteudo__fonteTitulo{
+    font-size: 36px;
+    font-family: "Zen Dots", sans-serif;
+}
+.apresentacaoConteudo__fonteParagrafo{
+    font-size: 20px;
+    font-family: "Zen Dots", sans-serif;
+}
+.imagemPortifolio{
+    border-radius: 15px;
+    width:35%;
+    height: 40%;
+}
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacaoLinks_link{
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 500;
+    background-color: #04D939;
+    padding: 21.5px 0;
+    width: 280px;
+    border-radius: 16px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+}
