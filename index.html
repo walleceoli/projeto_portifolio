@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalhoMenu__link" href="">Home</a>
+            <a class="cabecalhoMenu__link" href="">Sobre mim</a>
+        </nav>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -18,16 +21,27 @@
             </div>
             <div class="apresentacao__links">
                 <h2 class="apresentacaoLinks__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacaoLinks_link" href="www.linkedin.com/in/wallece-bispo-de-oliveira-b35643246">Linkedin</a>
-                <a class="apresentacaoLinks_link" href="https://github.com/walleceoli">Github</a>
+                <a class="apresentacaoLinks_link" href="www.linkedin.com/in/wallece-bispo-de-oliveira-b35643246">
+                    <img src="assets/linkedin.png" alt="Linkedin imagem">
+                    Linkedin</a>
+                
+                <a class="apresentacaoLinks_link" href="https://github.com/walleceoli">
+                    <img src="assets/github.png" alt="Github imagem">
+                    Github</a>
+            </div>
+            <div class="apresentacaoConteudo__projetos">
+                <h2 class="projetos__subtitulo">Projetos</h2>
+                <a class="projetos__links" href="">Analises</a>
+                <a class="projetos__links" href="">Dasboards</a>
+                <a class="projetos__links" href="">Consultas SQL</a>
             </div>
         </section>
         
-        <img class="imagemPortifolio" src="unnamed.png" alt="imagem portifolio">
+        <img class="imagemPortifolio" src="assets/unnamed.png" alt="imagem portifolio">
 
     </main>
-    <footer>
-        
+    <footer class="rodape">
+        <p>Desenvolvido por WAllece B. Oliveira / 2025</p>
     </footer>
     
 </body>
