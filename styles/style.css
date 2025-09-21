@@ -1,6 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+@media (max-width: 768px) {
+   .apresentacao {
+       flex-direction: column;
+       padding: 10%;
+       text-align: center;
+   }
+
+   .imagemPortifolio {
+       position: static;
+       width: 60%;
+       height: auto;
+       margin-top: 20px;
+   }
+
+   .apresentacao__links {
+       position: static;
+       width: 100%;
+       align-items: center;
+   }
+
+   .apresentacaoLinks_link {
+       width: 90%;
+       font-size: 18px;
+   }
+}
+
 
 * {
     margin: 0;
@@ -25,6 +51,9 @@
     border-radius: 2px;
     border-left: 10px;
     padding: 3px;
+}
+.cabecalhoMenu__link:hover{
+    background-color:#04D939;
 }
 
 body {
@@ -59,6 +88,13 @@ main {
 .apresentacao__conteudo{
     width: 615px;
     display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+.apresentacao__conteudo2{
+    align-items: center;
+    width: 615px;
+    display: flex;
     flex-direction: column;
     gap: 40px;
 }
@@ -80,9 +116,10 @@ main {
 .imagemPortifolio{
     border: 3px solid #03A63C;
     border-radius: 50px;
-    width:35%;
-    height: 40%;
-    position: absolute;
+    width:70%;
+    height: auto;
+    position:static;
+    margin-top: 20px;
     top: 15%;
     left: 55%;
 }
@@ -92,8 +129,9 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    width: 72%;
     gap: 20px;
-    position: absolute;
+    position: static;
     top: 56%;
     left: 62%;
 }
@@ -106,9 +144,9 @@ main {
     border:2px ridge #03A63C ;
     font-weight: 500;
     padding: 21.5px 0;
-    width: 380px;
+    width: 90%;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     color: #03A63C;
@@ -131,7 +169,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: static;
     top: 15%;
     left: 4%;
     gap: 8px;
