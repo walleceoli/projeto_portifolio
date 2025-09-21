@@ -27,6 +27,13 @@
    }
 }
 
+:root{
+    --cor--principal:#012340;
+    --cor--secundaria:#03A63C;
+    --cor--terciaria:#04D939;
+    --cor--rodape: #033159;
+}
+
 
 * {
     margin: 0;
@@ -34,7 +41,7 @@
 }
 
 .cabecalho{
-    background-color:#03A63C;
+    background-color:var(--cor--secundaria);
     padding: 2% 1% 2% 10%;
 }
 
@@ -44,23 +51,23 @@
 }
 
 .cabecalhoMenu__link{
-    border: 2px solid #012340;
+    border: 2px solid var(--cor--principal);
     font-family: "Zen Dots", sans-serif;
-    color: #033159;
+    color: var(--cor--principal);
     text-decoration: none;
     border-radius: 2px;
     border-left: 10px;
     padding: 3px;
 }
 .cabecalhoMenu__link:hover{
-    background-color:#04D939;
+    background-color: var(--cor--terciaria);
 }
 
 body {
     /* height: 100vh; */
     box-sizing: border-box;
-    background-color: #012340;
-    color: #03A63C;
+    background-color: var(--cor--principal);
+    color: var(--cor--secundaria);
 }
 html, body {
     height: 100%;      
@@ -75,7 +82,7 @@ main {
 
 
 .destaqueTitulo{
-    color:#04D939 ;
+    color:var(--cor--terciaria) ;
 }
 
 .apresentacao{
@@ -114,7 +121,7 @@ main {
 }
 
 .imagemPortifolio{
-    border: 3px solid #03A63C;
+    border: 3px solid var(--cor--secundaria);
     border-radius: 50px;
     width:70%;
     height: auto;
@@ -141,7 +148,7 @@ main {
     justify-content: center;
     gap: 16px;
     font-family: "Zen Dots", sans-serif;
-    border:2px ridge #03A63C ;
+    border:2px ridge var(--cor--secundaria) ;
     font-weight: 500;
     padding: 21.5px 0;
     width: 90%;
@@ -149,18 +156,18 @@ main {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    color: #03A63C;
+    color: var(--cor--secundaria);
 
 }
 
 .apresentacaoLinks_link:hover{
-    background-color: #033159;
+    background-color: var(--cor--principal);
 }
 
 
 .apresentacaoLinks__subtitulo{
     font-family:"Zen Dots", sans-serif ;
-    color:#03A63C ;
+    color:var(--cor--secundaria) ;
     font-weight: 500;
     font-size: 24px;
 }
@@ -177,7 +184,7 @@ main {
 
 .projetos__subtitulo{
      font-family:"Zen Dots", sans-serif ;
-    color:#03A63C ;
+    color:var(--cor--secundaria) ;
     font-weight: 500;
     font-size: 24px;
 }
@@ -186,7 +193,7 @@ main {
     display: flex;
     justify-content: center;
     font-family: "Zen Dots", sans-serif;
-    border:2px ridge #03A63C ;
+    border:2px ridge var(--cor--secundaria) ;
     font-weight: 500;
     padding: 15.5px 0;
     border-radius: 10px;
@@ -195,16 +202,16 @@ main {
     font-size: 11px;
     text-align: center;
     text-decoration: none;
-    color: #03A63C;
+    color: var(--cor--secundaria);
 }
 
 .projetos__links:hover{
-    background-color: #033159;
+    background-color: var(--cor--rodape);
 }
 
 .rodape{
-    color:#012340;
-    background-color:#03A63C;
+    color:var(--cor--principal);
+    background-color:var(--cor--secundaria);
     padding: 24px;
     display: flex;
     justify-content: center;
