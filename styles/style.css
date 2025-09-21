@@ -32,6 +32,9 @@
     --cor--secundaria:#03A63C;
     --cor--terciaria:#04D939;
     --cor--rodape: #033159;
+
+    --fonte--principal: "Zen Dots", sans-serif;
+    --fonte--secundaria: 'Fira Code', monospace;
 }
 
 
@@ -52,7 +55,7 @@
 
 .cabecalhoMenu__link{
     border: 2px solid var(--cor--principal);
-    font-family: "Zen Dots", sans-serif;
+    font-family: var(--fonte--principal);
     color: var(--cor--principal);
     text-decoration: none;
     border-radius: 2px;
@@ -112,12 +115,12 @@ main {
 
 .apresentacaoConteudo__fonteTitulo{
     font-size: 36px;
-    font-family: "Zen Dots", sans-serif;
+    font-family: var(--fonte--principal);
 }
 
 .apresentacaoConteudo__fonteParagrafo{
     font-size: 20px;
-    font-family: 'Fira Code', monospace;;
+    font-family: var(--fonte--secundaria);
 }
 
 .imagemPortifolio{
@@ -147,7 +150,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 16px;
-    font-family: "Zen Dots", sans-serif;
+    font-family: var(--fonte--principal);
     border:2px ridge var(--cor--secundaria) ;
     font-weight: 500;
     padding: 21.5px 0;
@@ -166,7 +169,7 @@ main {
 
 
 .apresentacaoLinks__subtitulo{
-    font-family:"Zen Dots", sans-serif ;
+    font-family:var(--fonte--principal) ;
     color:var(--cor--secundaria) ;
     font-weight: 500;
     font-size: 24px;
@@ -183,7 +186,7 @@ main {
 }
 
 .projetos__subtitulo{
-     font-family:"Zen Dots", sans-serif ;
+     font-family:var(--fonte--principal);
     color:var(--cor--secundaria) ;
     font-weight: 500;
     font-size: 24px;
@@ -192,7 +195,7 @@ main {
 .projetos__links{
     display: flex;
     justify-content: center;
-    font-family: "Zen Dots", sans-serif;
+    font-family: var(--fonte--principal);
     border:2px ridge var(--cor--secundaria) ;
     font-weight: 500;
     padding: 15.5px 0;
@@ -215,5 +218,5 @@ main {
     padding: 24px;
     display: flex;
     justify-content: center;
-    font-family: "Zen Dots", sans-serif;
+    font-family: var(--fonte--principal);
 }
