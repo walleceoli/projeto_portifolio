@@ -18,14 +18,21 @@
     padding: 0;
 }
 
+.cabecalho__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .cabecalho{
     background-color:var(--cor--secundaria);
-    padding: 2% 1% 2% 10%;
+    padding: 2% 10%;
 }
 
 .cabecalho__menu{
     display: flex;
-    gap: 100px
+    margin-left: 0;
+    gap: 40px
 }
 
 .cabecalhoMenu__link{
@@ -38,6 +45,26 @@
     padding: 3px;
 }
 .cabecalhoMenu__link:hover{
+    background-color: var(--cor--terciaria);
+}
+
+.cabecalhoMenu__certificados{
+    display: flex;
+    margin-right: 0;
+    gap: 100px
+}
+
+.cabecalhoMenuCertificados__link{
+    
+    border: 2px solid var(--cor--principal);
+    font-family: var(--fonte--principal);
+    color: var(--cor--principal);
+    text-decoration: none;
+    border-radius: 2px;
+    border-left: 10px;
+    padding: 3px;
+}
+.cabecalhoMenuCertificados__link:hover{
     background-color: var(--cor--terciaria);
 }
 
@@ -93,6 +120,8 @@ main {
 }
 
 .apresentacaoConteudo__fonteParagrafo{
+    margin-bottom: 1.5em;
+    line-height: 1.6;
     font-size: 1.25rem;
     font-family: var(--fonte--secundaria);
 }
