@@ -51,7 +51,7 @@
 .cabecalhoMenu__certificados{
     display: flex;
     margin-right: 0;
-    gap: 100px
+    gap: 40px
 }
 
 .cabecalhoMenuCertificados__link{
@@ -92,14 +92,18 @@ main {
 .apresentacao{
     padding: 5% 15%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 60px;
+    align-items: stretch;
 }
 
 .apresentacao__conteudo{
+    flex: 1;
     width: 50%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 40px;
 }
 .apresentacao__conteudo2{
@@ -118,10 +122,34 @@ main {
 }
 
 .apresentacao__certificados{
-    width: 50%;
+    flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: flex-start;
+}
+
+.apresentacaoConteudoFonteTitulo__centralizado{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-family: var(--fonte--principal);
+}
+
+.certificados__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    width: 100%;
+}
+
+.certificados__coluna{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
@@ -271,7 +299,32 @@ main {
 }
 
 @media (max-width: 1030px) {
-   .apresentacao {
+
+    .cabecalho__nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cabecalho__menu,
+    .cabecalhoMenu__certificados{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cabecalhoMenu__link,
+    .cabecalhoMenuCertificados__link{
+        width: auto;
+        max-width: 100%;
+        text-align: center;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+   .apresentacao,
+   .mainApresentacao__certificados {
        flex-direction: column;
        align-items: center;
        justify-content: flex-start;
@@ -281,7 +334,8 @@ main {
 
    .apresentacao__conteudo,
    .apresentacao__conteudo2,
-   .apresentacaoConteudo__projetos {
+   .apresentacaoConteudo__projetos,
+   .apresentacao__certificados {
        flex: 1 1 auto;
        width: 100%;
        margin: 20px auto 0 auto; 
@@ -292,18 +346,25 @@ main {
        flex-shrink: 0;
    }
 
-   .apresentacaoConteudo__projetos {
+   .apresentacaoConteudo__projetos{
        gap: 12px;
    }
 
-   .projetos__links {
-       width: 100%;        /* ocupa a largura toda */
-       max-width: 250px;   /* limite opcional */
+   .certificados__container{
+    flex-direction: column;
+    gap: 40px;
+   }
+
+   .projetos__links,
+   .apresentacaoLinks__link {
+       width: 100%;       
+       max-width: 250px;   
        height: auto;
        padding: 12px;
-       font-size: 0.875rem; /* ~14px */
+       font-size: 0.875rem; 
        text-align: center;
    }
+   
 
    .imagemPortifolio {
        width: 60%;
