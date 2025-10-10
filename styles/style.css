@@ -274,7 +274,7 @@ main {
     font-family: var(--fonte--principal);
     border:2px ridge var(--cor--secundaria) ;
     font-weight: 500;
-    padding: 12px 15.5px;
+    padding: 17px 15.5px;
     width: fit-content;
     height: 20px;
     border-radius: 10px;
