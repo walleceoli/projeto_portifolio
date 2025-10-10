@@ -30,6 +30,7 @@ Além disso, adicionei uma regra <strong>@media</strong> para que, ao abrir o si
 
 ---
 
-<h1>Link do portifólio</h1>
+<h1>Deploy do portifólio</h1>
 https://projeto-portifolio-tan.vercel.app/
+
 
